@@ -183,8 +183,7 @@ const MissionPageSection = () => {
             className="mt-5 max-w-2xl mx-auto text-lg"
             style={{ color: C.text }}
           >
-            We are driven by the belief that compassion, education, and collective effort
-            can rewrite the future of every child and every community.
+            Every action we take is driven by our commitment to uplift those in need and build a sustainable, just society.
           </motion.p>
         </div>
 
@@ -193,18 +192,18 @@ const MissionPageSection = () => {
           {[
             {
               title: "Our Core Mission",
-              text: "We work to uplift communities through education, healthcare, nutrition, empowerment, and opportunity. Our mission is rooted in dignity, equality, and sustainable growth.",
+              text: "To ensure social justice, economic and educational enhancement to the disadvantage sections of the society, focusing on Women, youth and children through developing mechanism aiming at service delivery and capacity building.",
               accent: C.sage,
             },
             {
               title: "What We Work On",
               isList: true,
-              items: ["📘 Education access for every child", "🥗 Food security programs", "👩 Women empowerment initiatives", "🚑 Healthcare and medical support", "🌱 Sustainable growth opportunities"],
+              items: ["📘 Awareness & Education", "🥗 Food & Nutrition", "👩 Women Empowerment", "🚑 Health & Relief", "🌱 Community Development & Rescue"],
               accent: "#FDF5E0",
             },
             {
               title: "Our Long-Term Vision",
-              text: "To build a society where no child sleeps hungry, no woman is left behind, and communities flourish through opportunity and empowerment.",
+              text: "To create a society where people are placed at the centre of all development initiative ensuring Social justice and human rights.",
               accent: C.sage,
             },
           ].map((item, idx) => (

@@ -78,14 +78,14 @@ const ContactSection = () => {
                 <div className="p-2.5 rounded-xl" style={{ background: "#E8F2EC" }}>
                   <Mail size={22} style={{ color: "#2D5A3D" }} />
                 </div>
-                <p className="text-lg">support@focusinternational.org</p>
+                <p className="text-lg">focusinternational2014@gmail.com</p>
               </div>
 
               <div className="flex items-center gap-4">
                 <div className="p-2.5 rounded-xl" style={{ background: "#E8F2EC" }}>
                   <Phone size={22} style={{ color: "#2D5A3D" }} />
                 </div>
-                <p className="text-lg">+91 98765 43210</p>
+                <p className="text-lg">+91 7894992972, 9437439265</p>
               </div>
 
               <div className="flex items-start gap-4">
@@ -93,21 +93,22 @@ const ContactSection = () => {
                   <MapPin size={22} style={{ color: "#C9A84C" }} />
                 </div>
                 <div>
-                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Registered Office</p>
+                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Office Address</p>
                   <p className="text-base leading-relaxed">
-                    N2/29, Block N2, Irc Village, Nayapalli, Bhubaneswar, Odisha 751015, India
+                    Niladri Vihar Omfed Be, (Near Utkal Hospital)<br/>
+                    Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
                 <div className="p-2.5 rounded-xl mt-0.5" style={{ background: "#FDF5E0" }}>
-                  <MapPin size={22} style={{ color: "#C9A84C" }} />
+                  <span style={{ fontSize: "1.25rem" }}>👤</span>
                 </div>
                 <div>
-                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Head Office</p>
+                  <p className="text-base font-bold" style={{ color: "#2D5A3D" }}>Chief Functionary</p>
                   <p className="text-base leading-relaxed">
-                    FALCON HOUSE, A/22, Cuttack Puri Road, Bhubaneswar-751006
+                    Mr. Pradeep Kumar Mukherjee
                   </p>
                 </div>
               </div>

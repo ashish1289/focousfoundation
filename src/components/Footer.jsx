@@ -6,7 +6,6 @@ import { Link } from "react-router-dom";
 const quickLinks = [
   { name: "Home", href: "/" },
   { name: "About Us", href: "/about" },
-  { name: "Our Mission", href: "/mission" },
   { name: "Programs", href: "/board-of-trustees" },
   { name: "Donate", href: "/donate" },
 ];
@@ -48,9 +47,7 @@ const Footer = () => {
             transition={{ duration: 0.7, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            Focus International Foundation empowers communities through education,
-            nutrition, women empowerment and healthcare.
-            Together, we create change that lasts.
+            Focus International Foundation is a non-profitable philanthropy charitable organization. It is working to empower and development of marginalized communities in health, education, livelihoods, disaster relief, social justice, rescue & restoration, focusing on building sustainable community capacity and improving access to resources for vulnerable populations.
           </motion.p>
         </div>
 
@@ -93,24 +90,22 @@ const Footer = () => {
           </h3>
           <ul className="space-y-4 text-sm" style={{ color: "rgba(253,248,240,0.72)" }}>
             <li className="flex items-center gap-3">
-              <Phone size={15} style={{ color: "#C9A84C" }} /> +91 98765 43210
+              <Phone size={15} style={{ color: "#C9A84C" }} /> +91 7894992972, 9437439265
             </li>
             <li className="flex items-center gap-3">
-              <Mail size={15} style={{ color: "#C9A84C" }} /> support@focusinternational.org
+              <Mail size={15} style={{ color: "#C9A84C" }} /> focusinternational2014@gmail.com
             </li>
             <li className="flex items-start gap-3">
               <MapPin size={16} className="mt-0.5 shrink-0" style={{ color: "#C9A84C" }} />
               <div>
-                <span className="block font-semibold text-white">Registered Office:</span>
-                N2/29, Block N2, Irc Village, Nayapalli, Bhubaneswar, Odisha 751015, India
+                <span className="block font-semibold text-white">Office Address:</span>
+                Niladri Vihar Omfed Be, (Near Utkal Hospital)<br/>
+                Post- Chandrasekharpur, Bhubaneswar, Odisha. Pin- 751021
               </div>
             </li>
             <li className="flex items-start gap-3">
-              <MapPin size={16} className="mt-0.5 shrink-0" style={{ color: "#C9A84C" }} />
-              <div>
-                <span className="block font-semibold text-white">Head Office:</span>
-                FALCON HOUSE, A/22, Cuttack Puri Road, Bhubaneswar-751006
-              </div>
+              <span className="mt-0.5 shrink-0" style={{ color: "#C9A84C" }}>🌐</span>
+              <a href="https://www.focusif.in" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">www.focusif.in</a>
             </li>
           </ul>
         </motion.div>

@@ -1,64 +1,81 @@
 import React from "react";
 import * as motion from "motion/react-client";
-// import {  Variants } from "motion/react";
 import {
   BookOpenCheck,
   HandHeart,
   UtensilsCrossed,
-  Users,
   Leaf,
   HeartPulse,
+  Lightbulb,
+  ShieldAlert,
+  Tent
 } from "lucide-react";
 
 export default function Programs() {
   const programs = [
     {
-      icon: <BookOpenCheck size={80} strokeWidth={1.5} />,
-      title: "Education For All",
-      desc: "Helping children access quality education and learning materials.",
-      img: "https://images.unsplash.com/photo-1569420626546-55b02c8376b1?q=80&w=2068&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // Replace with your real images
+      icon: <Lightbulb size={80} strokeWidth={1.5} />,
+      title: "Awareness",
+      desc: "Child abuse, Breast feeding, Child care, Health, Kitchen garden, Sanitation and hygiene, Youth & Women empowerment, Career counseling, Road safety, Food safety training and certification (Fos TaC), QCI Industrial certification and training, Legal, Domestic Violence.",
+      img: "/1.png",
       colorA: "#C9A84C",
       colorB: "#E8C96A",
     },
     {
-      icon: <UtensilsCrossed size={80} strokeWidth={1.5} />,
-      title: "Food & Nutrition",
-      desc: "Providing nutritious meals to underprivileged families.",
+      icon: <BookOpenCheck size={80} strokeWidth={1.5} />,
+      title: "Education",
+      desc: "Adult literacy, Non-formal, VidyaVhan special Tuition classes from 5 to 10 std., Free Tuition classes from 1 to 4 std., Sponsorship for drop out student, Day care scholarship.",
       img: "/education.jpg",
-      colorA: "#2D5A3D",
-      colorB: "#4A7C59",
-    },
-    {
-      icon: <Users size={80} strokeWidth={1.5} />,
-      title: "Women Empowerment",
-      desc: "Training and supporting women to build a better future.",
-      img: "/women.jpg",
-      colorA: "#4A7C59",
-      colorB: "#7A8F81",
-    },
-    {
-      icon: <HandHeart size={80} strokeWidth={1.5} />,
-      title: "Community Support",
-      desc: "Supporting families with essential resources and care.",
-      img: "/education.jpg",
-      colorA: "#E8C96A",
-      colorB: "#C9A84C",
-    },
-    {
-      icon: <Leaf size={80} strokeWidth={1.5} />,
-      title: "Environmental Conservation",
-      desc: "Protecting and preserving natural ecosystems for future generations.",
-      img: "/101.jpg",
       colorA: "#2D5A3D",
       colorB: "#4A7C59",
     },
     {
       icon: <HeartPulse size={80} strokeWidth={1.5} />,
-      title: "Healthcare Initiatives",
-      desc: "Providing medical care and health resources to underserved communities.",
+      title: "Health",
+      desc: "Medical health camp, De-worming and immunization, Special care and hospitalization for critical cases, Yoga classes, Leprosy care.",
       img: "/9.png",
+      colorA: "#4A7C59",
+      colorB: "#7A8F81",
+    },
+    {
+      icon: <UtensilsCrossed size={80} strokeWidth={1.5} />,
+      title: "Food and Nutrition",
+      desc: "Day Care centre, Home sponsorship for mother and child, Special food for special occasion.",
+      img: "/8.png",
+      colorA: "#E8C96A",
+      colorB: "#C9A84C",
+    },
+    {
+      icon: <HandHeart size={80} strokeWidth={1.5} />,
+      title: "Relief",
+      desc: "Cloth distribution, Blanket distribution, Food distribution, Flood relief and rescued, Educational supplement distribution.",
+      img: "/2.png",
+      colorA: "#2D5A3D",
+      colorB: "#4A7C59",
+    },
+    {
+      icon: <ShieldAlert size={80} strokeWidth={1.5} />,
+      title: "Rescue & Rehabilitation",
+      desc: "Sponsored to poor and needy, Sponsored to orphan children, Restoration to orphan children, Shelter settlement to the victim family.",
+      img: "/10.png",
       colorA: "#C9A84C",
       colorB: "#E8C96A",
+    },
+    {
+      icon: <Tent size={80} strokeWidth={1.5} />,
+      title: "Cultural Events",
+      desc: "Game and sports, Hidden talent, Quiz competition, Annual sports day and function, Birthday celebration, Festival observation, National day observation.",
+      img: "/3.png",
+      colorA: "#4A7C59",
+      colorB: "#7A8F81",
+    },
+    {
+      icon: <Leaf size={80} strokeWidth={1.5} />,
+      title: "Community Development",
+      desc: "Plantation, Road cleaning, Resources mobilizing, Legal protection and human Rights, Revolving loan for income generation small business, Water facilities, Government liaising for several needs for community development.",
+      img: "/101.jpg",
+      colorA: "#E8C96A",
+      colorB: "#C9A84C",
     },
   ];
 

@@ -174,7 +174,7 @@ export default function Mission() {
             <div className="mb-6">
                 <div style={{ fontFamily: "'Gloria Hallelujah', cursive" }}>
                 <HeadingSplit
-                  text={"Our Mission — Ignite Hope"}
+                  text={"Our Mission & Vision"}
                   letterDelay={0.03}
                   className="text-4xl md:text-5xl font-extrabold tracking-tight"
                   style={{ color: "#2D5A3D" }}
@@ -188,33 +188,25 @@ export default function Mission() {
             <div className="mb-6">
               <LineSplit
                 lines={[
-                  `\u201cSmall acts of kindness create the ripples that become waves of change.\u201d`,
+                  `\u201cTo create a society where people are placed at the centre of all development initiative ensuring Social justice and human rights.\u201d`,
                 ]}
-                className="text-lg md:text-xl font-semibold"
+                className="text-lg md:text-xl font-semibold italic"
                 style={{ color: "#C9A84C" }}
               />
+              <p className="mt-3 text-sm font-bold uppercase tracking-wider" style={{ color: "#2D5A3D" }}>— Our Vision</p>
             </div>
 
-            <motion.p
+            <motion.div
               initial={{ opacity: 0, y: 18 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.12 }}
               viewport={{ once: true }}
-              className="leading-relaxed"
-              style={{ color: "#4B5E53" }}
             >
-              We work hand-in-hand with communities, educators, frontline workers, and
-              local leaders to build sustainable pathways of hope. Our mission is rooted
-              in dignity — ensuring that every child, woman, and family has access to
-              opportunities that empower them to rise above hardship with confidence.
-              <br /><br />
-              Through education, nutrition, healthcare, and community development, we
-              nurture environments where people are not just supported, but strengthened
-              to shape their own futures.
-              <br /><br />
-              Every program we initiate is designed to restore dignity, amplify
-              potential, and enable communities to stand resilient, united, and hopeful.
-            </motion.p>
+              <h4 className="text-xl font-bold mb-3" style={{ color: "#2D5A3D" }}>Our Mission</h4>
+              <p className="leading-relaxed text-lg" style={{ color: "#4B5E53" }}>
+                To ensure social justice, economic and educational enhancement to the disadvantage sections of the society, focusing on Women, youth and children through developing mechanism aiming at service delivery and capacity building.
+              </p>
+            </motion.div>
           </div>
 
           {/* Right column: bento grid */}
