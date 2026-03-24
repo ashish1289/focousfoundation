@@ -60,23 +60,48 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-7">
-          {navLinks.map((link) => (
-            <motion.div
-              key={link.name}
-              whileHover={{ y: -2 }}
-              transition={{ type: "spring", stiffness: 300 }}
-            >
-              <Link
-                to={link.href}
-                className="font-medium text-sm tracking-wide transition-colors"
-                style={{ color: "#4B5E53" }}
-                onMouseEnter={e => (e.target.style.color = "#2D5A3D")}
-                onMouseLeave={e => (e.target.style.color = "#4B5E53")}
+          {navLinks.map((link) => {
+            const isFocusSolutions = link.name === "Focus Solutions";
+            
+            return (
+              <motion.div
+                key={link.name}
+                whileHover={{ y: -2 }}
+                transition={{ type: "spring", stiffness: 300 }}
               >
-                {link.name}
-              </Link>
-            </motion.div>
-          ))}
+                <Link
+                  to={link.href}
+                  className={`font-medium tracking-wide transition-all duration-300 ${
+                    isFocusSolutions ? "text-[13px] px-4 py-1.5 rounded-full flex items-center gap-1.5 shadow-md border" : "text-sm"
+                  }`}
+                  style={{ 
+                    color: isFocusSolutions ? "#1A3322" : "#4B5E53",
+                    background: isFocusSolutions ? "linear-gradient(135deg, #E8C96A, #C9A84C)" : "transparent",
+                    borderColor: isFocusSolutions ? "rgba(255,255,255,0.4)" : "transparent",
+                    fontWeight: isFocusSolutions ? "800" : "500",
+                  }}
+                  onMouseEnter={e => {
+                    if(!isFocusSolutions) {
+                      e.target.style.color = "#2D5A3D";
+                    } else {
+                      e.target.style.background = "linear-gradient(135deg, #F5D678, #D6B559)";
+                      e.target.style.boxShadow = "0 6px 16px rgba(201,168,76,0.4)";
+                    }
+                  }}
+                  onMouseLeave={e => {
+                    if(!isFocusSolutions) {
+                      e.target.style.color = "#4B5E53";
+                    } else {
+                      e.target.style.background = "linear-gradient(135deg, #E8C96A, #C9A84C)";
+                      e.target.style.boxShadow = "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)";
+                    }
+                  }}
+                >
+                  {link.name}
+                </Link>
+              </motion.div>
+            );
+          })}
 
           {/* Donate Button */}
           <motion.div
@@ -123,17 +148,27 @@ const Navbar = () => {
             }}
           >
             <div className="flex flex-col p-5 space-y-4">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  to={link.href}
-                  onClick={() => setOpen(false)}
-                  className="font-medium text-base transition-colors"
-                  style={{ color: "#4B5E53" }}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isFocusSolutions = link.name === "Focus Solutions";
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setOpen(false)}
+                    className={`transition-colors ${
+                      isFocusSolutions 
+                        ? "font-bold text-sm px-4 py-2 rounded-full flex items-center gap-2 shadow-md w-full justify-center" 
+                        : "font-medium text-base text-center w-full"
+                    }`}
+                    style={{ 
+                      color: isFocusSolutions ? "#1A3322" : "#4B5E53",
+                      background: isFocusSolutions ? "linear-gradient(135deg, #E8C96A, #C9A84C)" : "transparent"
+                    }}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
               <Link
                 to="/donate"
                 className="px-4 py-3 rounded-xl text-center font-semibold shadow-sm text-sm"
