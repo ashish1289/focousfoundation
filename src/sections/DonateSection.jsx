@@ -114,7 +114,7 @@ const DonateSection = () => {
               </div>
               <input type="email" placeholder="Email Address" className="w-full px-5 py-4 rounded-2xl bg-[#FDF8F0] border border-[#EDE4CE] focus:border-[#C9A84C] focus:ring-2 focus:ring-[#C9A84C]/20 outline-none transition-all text-[#2D5A3D] font-medium placeholder-[#7A8F81]" />
               
-              <div className="pt-4 pb-2 border-t border-[#EDE4CE]">
+              {/* <div className="pt-4 pb-2 border-t border-[#EDE4CE]">
                 <p className="text-sm font-bold uppercase text-[#C9A84C] tracking-wider mb-4">Select Amount (₹)</p>
                 <div className="flex flex-wrap gap-3">
                   {["₹500", "₹1000", "₹2500", "₹5000", "Custom"].map(amt => (
@@ -131,7 +131,7 @@ const DonateSection = () => {
                     </button>
                   ))}
                 </div>
-              </div>
+              </div> */}
 
               <button className="w-full mt-6 py-5 rounded-2xl text-xl font-bold text-white shadow-xl flex items-center justify-center gap-3 transition-all hover:scale-[1.02] hover:shadow-2xl active:scale-95 group bg-[#2D5A3D] hover:bg-[#1e3e29]">
                 Confirm Pledge <ArrowRight className="w-6 h-6 group-hover:translate-x-1 transition-transform" />

@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const navLinks = [
   { name: "About", href: "/about" },
   { name: "Focus Solutions", href: "/focus-solutions" },
-  { name: "Programs", href: "/board-of-trustees" },
-  { name: "Blog", href: "/blog" },
+  { name: "Trustees", href: "/board-of-trustees" },
+  { name: "Gallery", href: "/gallery" },
   { name: "Contact", href: "/contact" },
 ];
 
